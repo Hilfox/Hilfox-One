@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Page</title>
+    <style>
+        /* Lock the viewport and remove all spacing */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; /* Hides any spillover */
+            background-color: black; /* Fills empty space if image doesn't match screen shape */
+        }
+
+        /* Force the image to fit perfectly inside the window boundaries */
+        .full-page-image {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain; /* Fits the whole image inside the borders without cropping */
+        }
+    </style>
+</head>
+<body>
+    <img src="HilfoxWeb.png" alt="A full screen image" class="full-page-image">
+</body>
+</html>
